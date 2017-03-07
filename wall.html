@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Example Pagbe</title>
+
+<!-- PASTE THESE IN -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<link href="http://photos.exeterguild.com/SuperFast/css/SuperFastcore.css" rel="stylesheet" type="text/css" media="all" />
+<!-- END -->
+
+</head>
+
+<body>
+
+
+<header class="wall">
+	<h1>YOUR ACADEMIC WALL</h1>
+</header>
+
+<div class="row jericho">
+	<div class="small-12 medium-6 columns">
+
+
+		<aside>
+		<h1 class="text-center">{pagetitle}</h1>
+		{imagenavigation}
+		</aside>
+
+		<section class="card">
+		
+			<script language="javascript"> 
+			function campus() {
+				var ele = document.getElementById("campusContent");
+				var text = document.getElementById("campusTitle");
+				if(ele.style.display == "block") {
+						ele.style.display = "none";
+					text.innerHTML = "show";
+				}
+				else {
+					ele.style.display = "block";
+					text.innerHTML = "hide";
+				}
+			} 
+			</script>
+ 
+<h2 class="text-center">Your Campus <a id="campusTitle" href="javascript:campus();">hide</a></h2>
+			<div id="campusContent" style="display: block">
+			{campus}
+			</div>
+		
+		
+		
+		
+			<h2 class="text-center"></h2>
+			
+		</section>
+		<section class="card">
+
+<script language="javascript"> 
+function toggle() {
+	var ele = document.getElementById("toggleText");
+	var text = document.getElementById("displayText");
+	if(ele.style.display == "block") {
+    		ele.style.display = "none";
+		text.innerHTML = "show";
+  	}
+	else {
+		ele.style.display = "block";
+		text.innerHTML = "hide";
+	}
+} 
+</script>
+ 
+<h2 class="text-center">Feedback <a id="displayText" href="javascript:toggle();">show</a></h2>
+			<div id="toggleText" style="display: none">
+			<h3 class="text-center">Give feedback</h3>
+			{yourentry}
+			<h3 class="text-center">Current feedback</h3>
+			{news}
+			{ideas}
+			<h3 class="text-center">Resolved issues</h3>
+			{yourresolved}ed}
+			</div>
+		</section>
+		
+		<section class="card">
+		
+			<script language="javascript"> 
+			function college() {
+				var ele = document.getElementById("collegeContent");
+				var text = document.getElementById("collegeTitle");
+				if(ele.style.display == "block") {
+						ele.style.display = "none";
+					text.innerHTML = "show";
+				}
+				else {
+					ele.style.display = "block";
+					text.innerHTML = "hide";
+				}
+			} 
+			</script>
+ 
+<h2 class="text-center">Your College <a id="collegeTitle" href="javascript:college();">show</a></h2>
+			<div id="collegeContent" style="display: none">
+				<h3 class="text-center">Your Officer</h3>
+				{officer}
+				<h3 class="text-center">Other Info</h3>
+				{college}
+			</div>
+	
+			
+		</section>
+		
+		<section class="card">
+		
+			<script language="javascript"> 
+			function subject() {
+				var ele = document.getElementById("subjectContent");
+				var text = document.getElementById("subjectTitle");
+				if(ele.style.display == "block") {
+						ele.style.display = "none";
+					text.innerHTML = "show";
+				}
+				else {
+					ele.style.display = "block";
+					text.innerHTML = "hide";
+				}
+			} 
+			</script>
+ 
+<h2 class="text-center">Your Subjects <a id="subjectTitle" href="javascript:subject();">show</a></h2>
+			<div id="subjectContent" style="display: none">
+				<h3 class="text-center">Society</h3>
+				{yoursocial}
+				<h3 class="text-center">Cost Checker</h3>
+				{yourcosts}
+				<h3 class="text-center">SSLC Minutes</h3>
+				{yourminutes}
+				<h3 class="text-center">Department</h3>
+				{yourlinks}
+			</div>
+	
+			
+		</section>
+		
+		<section class="card">
+		
+			<script language="javascript"> 
+			function systems() {
+				var ele = document.getElementById("systemsContent");
+				var text = document.getElementById("systemsTitle");
+				if(ele.style.display == "block") {
+						ele.style.display = "none";
+					text.innerHTML = "show";
+				}
+				else {
+					ele.style.display = "block";
+					text.innerHTML = "hide";
+				}
+			} 
+			</script>
+ 
+<h2 class="text-center">Your Systems <a id="systemsTitle" href="javascript:systems();">show</a></h2>
+			<div id="systemsContent" style="display: none">
+				<h3 class="text-center">Society</h3>
+				{yoursocial}
+				<h3 class="text-center">Cost Checker</h3>
+				{yourcosts}
+				<h3 class="text-center">SSLC Minutes</h3>
+				{yourminutes}
+				<h3 class="text-center">Department</h3>
+				{yourlinks}
+			</div>
+	
+			
+		</section>
+			
+	
+		<section class="">
+			<h2 class="text-center"></h2>
+			
+		</section>
+	</div>
+	<div class="small-12 medium-3 columns">
+		<p>
+	</div>
+	<div class="small-12 medium-3 sidebar columns">
+		<section class="">
+			<h2 class="text-center">Your Reps</h2>
+			{yourchair}
+			{yourdeputy}
+			{yourfirst}
+			{yoursecond}
+			{yourthird}
+			{yourfourth}
+			{yourfinal}
+			{yourpgt}
+			{yourlanglead}
+			{yourlangrep}
+			{yourreps}
+		</section>
+
+		
+	</div>
+
+</div>	
+
+</body>
+
+</head>
